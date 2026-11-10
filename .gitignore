@@ -1,0 +1,19 @@
+# Dependencies (recreate with `npm install` / `npm run setup:whisper`)
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local data: database, recordings, models (kept in %LOCALAPPDATA%\CourtScribe on Windows)
+data/
+*.pcm
+*.wav
+
+# Environment and tooling
+.env
+.env.*
+.claude/
+*.log
+.DS_Store
+Thumbs.db

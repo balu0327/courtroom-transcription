@@ -1,0 +1,21 @@
+{
+  "name": "courtscribe",
+  "version": "1.0.0",
+  "description": "Courtroom transcription: live recording, WebSocket transcript streaming, speaker attribution, synced playback, search and editing on PostgreSQL.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "setup:whisper": "node scripts/setup-whisper.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "express": "^4.22.3",
+    "pg": "^8.23.1",
+    "ws": "^8.22.2"
+  }
+}
